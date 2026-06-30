@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SocialPulse — Social media trends, TikTok news, Instagram tips, YouTube updates aur creator economy ki latest khabrein.">
+<title>SocialPulse — Social Media Trends & News 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --black:#0A0A0A;--white:#fff;--off:#F7F6F2;--ink:#1A1A1A;
+  --muted:#6B7280;--border:#E5E3DC;--accent:#FF3B3B;
+  --accent2:#6C47FF;--accent3:#00B894;
+  --sans:'Inter',sans-serif;--serif:'Fraunces',Georgia,serif;
+  --r:12px;
+}
+body{font-family:var(--sans);background:var(--off);color:var(--ink);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+img{display:block;max-width:100%;}
+button{cursor:pointer;font-family:inherit;border:none;background:none;}
+
+/* PAGE SYSTEM */
+.page{display:none;}
+.page.active{display:block;}
+
+/* HEADER */
+.site-header{background:var(--black);color:#fff;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,0.08);}
+.header-top{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto;padding:0 24px;height:64px;gap:24px;}
+.logo{display:flex;align-items:center;gap:10px;cursor:pointer;}
+.logo-mark{width:36px;height:36px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;}
+.logo-mark svg{width:20px;height:20px;fill:white;}
+.logo-name{font-size:20px;font-weight:800;letter-spacing:-0.5px;color:#fff;}
+.logo-name span{color:var(--accent);}
+.header-search{flex:1;max-width:380px;position:relative;}
+.header-search input{width:100%;height:38px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:0 16px 0 40px;font-size:14px;color:#fff;outline:none;}
+.header-search input::placeholder{color:rgba(255,255,255,0.4);}
+.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:16px;height:16px;stroke:rgba(255,255,255,0.4);fill:none;stroke-width:2;}
+.header-actions{display:flex;align-items:center;gap:12px;flex-shrink:0;}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:20px;font-size:13px;font-weight:600;transition:all 0.15s;cursor:pointer;}
+.btn-ghost{color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.15);}
+.btn-primary{background:var(--accent);color:#fff;border:none;}
+.btn-primary:hover{background:#E83232;}
+
+/* NAV */
+.site-nav{background:var(--black);border-top:1px solid rgba(255,255,255,0.06);}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none;}
+.nav-inner::-webkit-scrollbar{display:none;}
+.nav-link{display:flex;align-items:center;gap:6px;padding:10px 14px;font-size:13px;font-weight:500;color:rgba(255,255,255,0.55);white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.15s;cursor:pointer;}
+.nav-link:hover,.nav-link.active{color:#fff;}
+.nav-link.active{border-bottom-color:var(--accent);}
+
+/* TICKER */
+.ticker{background:var(--accent);color:#fff;padding:8px 0;overflow:hidden;position:relative;}
+.ticker-label{position:absolute;left:0;top:0;bottom:0;background:var(--black);padding:0 18px;display:flex;align-items:center;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;z-index:2;}
+.ticker-track{display:flex;animation:ticker 35s linear infinite;padding-left:140px;}
+.ticker-item{white-space:nowrap;padding:0 40px;font-size:13px;font-weight:500;}
+.ticker-item::before{content:'▸  ';}
+@keyframes ticker{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+/* BREAKING */
+.breaking-bar{background:var(--accent);color:#fff;text-align:center;padding:9px;font-size:13px;font-weight:600;}
+.breaking-bar strong{font-weight:800;margin-right:8px;}
+
+/* MAIN */
+.site-main{max-width:1280px;margin:0 auto;padding:0 24px;}
+.breadcrumb{font-size:13px;color:var(--muted);padding:16px 0 0;cursor:pointer;}
+.breadcrumb span{margin:0 6px;}
+.breadcrumb .bc-link{color:var(--muted);}
+.breadcrumb .bc-link:hover{color:var(--accent);}
+
+/* SECTION */
+.section{padding:40px 0;}
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;padding-bottom:14px;border-bottom:2px solid var(--black);}
+.section-title{font-family:var(--serif);font-size:24px;font-weight:700;letter-spacing:-0.3px;display:flex;align-items:center;gap:10px;}
+.section-title::before{content:'';display:block;width:4px;height:24px;background:var(--accent);border-radius:2px;}
+.see-all{font-size:13px;font-weight:600;color:var(--accent);cursor:pointer;}
+.see-all:hover{text-decoration:underline;}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:1fr 380px;gap:24px;padding:32px 0 0;}
+.hero-feature{position:relative;border-radius:20px;overflow:hidden;min-height:500px;background:var(--black);display:flex;flex-direction:column;justify-content:flex-end;cursor:pointer;}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:0;opacity:0.6;}
+.hero-gradient{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.4) 55%,transparent 100%);}
+.hero-content{position:relative;z-index:2;padding:32px;color:#fff;}
+.hero-tag{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;padding:4px 12px;border-radius:4px;margin-bottom:16px;}
+.hero-title{font-family:var(--serif);font-size:36px;font-weight:700;line-height:1.15;letter-spacing:-0.5px;margin-bottom:12px;}
+.hero-excerpt{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:20px;max-width:560px;}
+.hero-meta{display:flex;align-items:center;gap:16px;font-size:13px;color:rgba(255,255,255,0.55);}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--accent2);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;flex-shrink:0;}
+.hero-sidebar{display:flex;flex-direction:column;gap:16px;}
+
+/* SIDEBAR CARDS */
+.sidebar-card{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--border);transition:transform 0.15s,box-shadow 0.15s;cursor:pointer;}
+.sidebar-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.08);}
+.sidebar-card-img{width:100%;height:150px;object-fit:cover;border-radius:0;}
+.sidebar-card-body{padding:14px 16px;}
+.card-tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;padding:3px 8px;border-radius:4px;display:inline-block;margin-bottom:8px;}
+.tag-tiktok{background:#010101;color:#fff;}
+.tag-instagram{background:#C13584;color:#fff;}
+.tag-youtube{background:#FF0000;color:#fff;}
+.tag-linkedin{background:#0A66C2;color:#fff;}
+.tag-trend{background:#FFF3E0;color:#E65100;}
+.tag-creator{background:#EDE7F6;color:#4527A0;}
+.tag-news{background:#E8F5E9;color:#1B5E20;}
+.tag-ai{background:#E3F2FD;color:#0D47A1;}
+.tag-marketing{background:#FCE4EC;color:#880E4F;}
+.sidebar-card-title{font-size:15px;font-weight:700;line-height:1.35;color:var(--ink);margin-bottom:8px;}
+.sidebar-card-meta{font-size:12px;color:var(--muted);}
+
+/* ARTICLE CARDS */
+.card-grid{display:grid;gap:20px;}
+.grid-4{grid-template-columns:repeat(4,1fr);}
+.grid-3{grid-template-columns:repeat(3,1fr);}
+.article-card{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--border);display:flex;flex-direction:column;transition:transform 0.15s,box-shadow 0.15s;cursor:pointer;}
+.article-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,0.1);}
+.article-card-img{width:100%;height:180px;object-fit:cover;border-radius:0;}
+.article-card-body{padding:18px;flex:1;display:flex;flex-direction:column;}
+.article-card-title{font-size:16px;font-weight:700;line-height:1.4;color:var(--ink);margin-bottom:10px;flex:1;}
+.article-card:hover .article-card-title{color:var(--accent);}
+.article-card-excerpt{font-size:14px;color:var(--muted);line-height:1.55;margin-bottom:14px;}
+.article-meta{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--muted);margin-top:auto;padding-top:12px;border-top:1px solid var(--border);}
+
+/* LIST ARTICLES */
+.two-col{display:grid;grid-template-columns:1fr 340px;gap:32px;}
+.list-article{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:18px 0;border-bottom:1px solid var(--border);align-items:start;cursor:pointer;}
+.list-article:hover .list-article-title{color:var(--accent);}
+.list-article-img{width:120px;height:80px;object-fit:cover;border-radius:6px;}
+.list-article-title{font-size:15px;font-weight:700;line-height:1.4;margin-bottom:6px;color:var(--ink);}
+.list-article-excerpt{font-size:13px;color:var(--muted);line-height:1.5;margin-bottom:8px;}
+.list-article-meta{font-size:12px;color:var(--muted);}
+
+/* SIDEBAR WIDGETS */
+.sticky-sidebar{position:sticky;top:100px;display:flex;flex-direction:column;gap:24px;}
+.widget{background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;}
+.widget-header{padding:14px 18px;border-bottom:1px solid var(--border);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;display:flex;align-items:center;gap:8px;}
+.widget-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);}
+.widget-body{padding:16px 18px;}
+.newsletter-widget{background:var(--black);color:#fff;border-radius:var(--r);padding:24px;text-align:center;}
+.newsletter-widget h3{font-family:var(--serif);font-size:20px;font-weight:700;margin-bottom:8px;}
+.newsletter-widget p{font-size:13px;color:rgba(255,255,255,0.6);margin-bottom:16px;line-height:1.5;}
+.newsletter-input{width:100%;padding:10px 14px;border-radius:8px;border:none;background:rgba(255,255,255,0.1);color:#fff;font-size:13px;margin-bottom:10px;outline:none;font-family:inherit;}
+.newsletter-input::placeholder{color:rgba(255,255,255,0.35);}
+.newsletter-btn{width:100%;padding:10px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;}
+.newsletter-btn:hover{background:#E83232;}
+.trending-item{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--border);align-items:flex-start;cursor:pointer;}
+.trending-item:last-child{border-bottom:none;}
+.trending-num{font-size:28px;font-weight:800;color:var(--border);line-height:1;min-width:32px;font-family:var(--serif);}
+.trending-item:hover .trending-num{color:var(--accent);}
+.trending-tag{font-size:11px;font-weight:700;text-transform:uppercase;color:var(--accent);letter-spacing:0.5px;}
+.trending-title{font-size:14px;font-weight:600;line-height:1.4;margin:4px 0 4px;color:var(--ink);}
+.trending-item:hover .trending-title{color:var(--accent);}
+.trending-meta{font-size:12px;color:var(--muted);}
+.tags-cloud{display:flex;flex-wrap:wrap;gap:8px;}
+.tag-pill{padding:6px 14px;border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:500;color:var(--ink);background:#fff;cursor:pointer;transition:all 0.15s;}
+.tag-pill:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.ad-slot{background:#fff;border:1px dashed var(--border);border-radius:var(--r);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px;text-align:center;padding:12px;}
+.ad-slot-banner{height:90px;}
+.ad-slot-square{height:250px;}
+.ad-label{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:4px;}
+.platform-cards{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;}
+.platform-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:20px 16px;text-align:center;transition:transform 0.15s,box-shadow 0.15s;cursor:pointer;}
+.platform-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,0.1);}
+.platform-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:22px;}
+.platform-name{font-size:13px;font-weight:700;margin-bottom:4px;}
+.platform-stat{font-size:22px;font-weight:800;font-family:var(--serif);line-height:1;margin-bottom:4px;}
+.platform-label{font-size:11px;color:var(--muted);}
+.platform-change{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:600;margin-top:6px;padding:2px 8px;border-radius:10px;}
+.change-up{background:#E8F5E9;color:#1B5E20;}
+.change-down{background:#FFF3E0;color:#E65100;}
+.hot-badge{display:inline-flex;align-items:center;background:var(--accent);color:#fff;font-size:10px;font-weight:800;text-transform:uppercase;padding:2px 7px;border-radius:4px;}
+.sep{color:var(--border);}
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.video-card{border-radius:var(--r);overflow:hidden;border:1px solid var(--border);background:#fff;transition:transform 0.15s,box-shadow 0.15s;cursor:pointer;}
+.video-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,0.1);}
+.video-thumb{position:relative;width:100%;height:200px;background:var(--black);overflow:hidden;}
+.video-thumb img{width:100%;height:100%;object-fit:cover;border-radius:0;opacity:0.85;}
+.play-btn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
+.play-circle{width:52px;height:52px;background:rgba(255,255,255,0.95);border-radius:50%;display:flex;align-items:center;justify-content:center;}
+.play-circle svg{width:22px;height:22px;fill:var(--ink);margin-left:3px;}
+.video-duration{position:absolute;bottom:8px;right:10px;background:rgba(0,0,0,0.8);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:4px;}
+.video-platform-badge{position:absolute;top:10px;left:10px;background:rgba(0,0,0,0.75);color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;text-transform:uppercase;}
+.video-body{padding:16px;}
+.video-title{font-size:15px;font-weight:700;line-height:1.4;margin-bottom:10px;color:var(--ink);}
+.video-card:hover .video-title{color:var(--accent);}
+.video-stats{display:flex;gap:14px;font-size:12px;color:var(--muted);}
+
+/* PAGINATION */
+.pagination{display:flex;align-items:center;gap:6px;justify-content:center;padding:32px 0;}
+.page-btn{width:38px;height:38px;border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;cursor:pointer;background:#fff;transition:all 0.15s;}
+.page-btn:hover,.page-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.page-btn.pn{width:auto;padding:0 14px;font-size:13px;}
+
+/* COMMENT */
+.comment-section{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:28px;margin-top:40px;}
+.comment-title{font-family:var(--serif);font-size:22px;font-weight:700;margin-bottom:20px;}
+.comment-form{display:flex;flex-direction:column;gap:12px;}
+.comment-form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.form-input{width:100%;padding:10px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;font-family:inherit;background:var(--off);color:var(--ink);outline:none;transition:border-color 0.15s;}
+.form-input:focus{border-color:var(--accent);background:#fff;}
+.form-textarea{min-height:120px;resize:vertical;}
+.comment-submit{background:var(--accent);color:#fff;padding:12px 28px;border-radius:8px;font-size:14px;font-weight:700;border:none;cursor:pointer;align-self:flex-start;}
+.comment-submit:hover{background:#E83232;}
+
+/* POLL */
+.poll-question{font-size:15px;font-weight:700;margin-bottom:14px;}
+.poll-option{position:relative;margin-bottom:10px;border-radius:8px;overflow:hidden;border:1px solid var(--border);cursor:pointer;}
+.poll-option:hover{border-color:var(--accent);}
+.poll-bar{position:absolute;top:0;left:0;bottom:0;background:#FFF0F0;}
+.poll-label{position:relative;padding:10px 14px;font-size:14px;display:flex;justify-content:space-between;}
+.poll-pct{font-size:13px;font-weight:700;color:var(--accent);}
+
+/* TOOL BANNER */
+.tool-banner{background:var(--accent2);border-radius:20px;padding:48px 40px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;color:#fff;overflow:hidden;position:relative;}
+.tool-banner::before{content:'';position:absolute;top:-60px;right:-60px;width:300px;height:300px;background:rgba(255,255,255,0.06);border-radius:50%;}
+.tool-banner-eyebrow{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;opacity:0.65;margin-bottom:10px;}
+.tool-banner-title{font-family:var(--serif);font-size:32px;font-weight:700;line-height:1.2;margin-bottom:12px;}
+.tool-banner-desc{font-size:15px;opacity:0.75;max-width:500px;}
+.tool-banner-btn{background:#fff;color:var(--accent2);padding:14px 28px;border-radius:10px;font-size:15px;font-weight:700;white-space:nowrap;flex-shrink:0;transition:transform 0.15s;display:inline-block;cursor:pointer;}
+.tool-banner-btn:hover{transform:translateY(-2px);}
+
+/* FOOTER */
+.site-footer{background:var(--black);color:rgba(255,255,255,0.7);margin-top:64px;padding:56px 0 0;}
+.footer-inner{max-width:1280px;margin:0 auto;padding:0 24px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+.footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+.footer-logo-name{font-size:22px;font-weight:800;color:#fff;}
+.footer-logo-name span{color:var(--accent);}
+.footer-desc{font-size:14px;line-height:1.65;margin-bottom:20px;}
+.footer-socials{display:flex;gap:10px;}
+.footer-social-btn{width:36px;height:36px;border:1px solid rgba(255,255,255,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer;transition:all 0.15s;color:rgba(255,255,255,0.6);}
+.footer-social-btn:hover{background:var(--accent);border-color:var(--accent);color:#fff;}
+.footer-col-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#fff;margin-bottom:16px;}
+.footer-links{display:flex;flex-direction:column;gap:10px;}
+.footer-link{font-size:14px;color:rgba(255,255,255,0.55);transition:color 0.15s;cursor:pointer;}
+.footer-link:hover{color:#fff;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 0;display:flex;align-items:center;justify-content:space-between;font-size:13px;color:rgba(255,255,255,0.35);}
+.footer-bottom-links{display:flex;gap:20px;}
+.footer-bottom-link{color:rgba(255,255,255,0.35);cursor:pointer;}
+.footer-bottom-link:hover{color:rgba(255,255,255,0.7);}
+
+/* ARTICLE PAGE */
+.article-page{max-width:1280px;margin:0 auto;padding:0 24px;}
+.article-layout{display:grid;grid-template-columns:1fr 340px;gap:48px;padding:32px 0;}
+.article-header{margin-bottom:28px;}
+.article-tag{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;padding:4px 12px;border-radius:4px;margin-bottom:14px;}
+.article-main-title{font-family:var(--serif);font-size:42px;font-weight:700;line-height:1.15;letter-spacing:-0.5px;margin-bottom:16px;color:var(--ink);}
+.article-subtitle{font-size:18px;color:var(--muted);line-height:1.55;margin-bottom:24px;}
+.article-byline{display:flex;align-items:center;gap:16px;padding:16px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:28px;}
+.byline-avatar{width:42px;height:42px;border-radius:50%;background:var(--accent2);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;flex-shrink:0;}
+.byline-info{}
+.byline-name{font-size:15px;font-weight:700;}
+.byline-meta{font-size:13px;color:var(--muted);}
+.article-hero-img{width:100%;height:420px;object-fit:cover;border-radius:var(--r);margin-bottom:8px;}
+.article-img-caption{font-size:12px;color:var(--muted);margin-bottom:28px;text-align:center;}
+.article-body{font-size:17px;line-height:1.75;color:#2D2D2D;}
+.article-body h2{font-family:var(--serif);font-size:26px;font-weight:700;margin:36px 0 14px;color:var(--ink);}
+.article-body h3{font-size:20px;font-weight:700;margin:28px 0 12px;color:var(--ink);}
+.article-body p{margin-bottom:20px;}
+.article-body ul,.article-body ol{margin:0 0 20px 24px;}
+.article-body li{margin-bottom:8px;}
+.article-body blockquote{border-left:4px solid var(--accent);padding:16px 24px;background:#FFF5F5;border-radius:0 8px 8px 0;margin:24px 0;font-style:italic;font-size:18px;color:var(--ink);}
+.article-body strong{font-weight:700;}
+.article-body .highlight-box{background:var(--off);border:1px solid var(--border);border-radius:var(--r);padding:20px 24px;margin:24px 0;}
+.article-share{display:flex;align-items:center;gap:12px;padding:24px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin:32px 0;}
+.share-label{font-size:14px;font-weight:700;}
+.share-btn{padding:8px 18px;border-radius:20px;font-size:13px;font-weight:600;cursor:pointer;border:1px solid var(--border);background:#fff;transition:all 0.15s;}
+.share-btn:hover{background:var(--ink);color:#fff;border-color:var(--ink);}
+.back-btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--accent);cursor:pointer;margin-bottom:20px;}
+.back-btn:hover{text-decoration:underline;}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px;}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr;}
+  .hero-sidebar{display:none;}
+  .grid-4{grid-template-columns:repeat(2,1fr);}
+  .platform-cards{grid-template-columns:repeat(3,1fr);}
+  .two-col,.article-layout{grid-template-columns:1fr;}
+  .sticky-sidebar{position:relative;top:0;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:32px;}
+}
+@media(max-width:680px){
+  .hero-title{font-size:26px;}
+  .grid-4,.grid-3{grid-template-columns:1fr;}
+  .video-grid{grid-template-columns:1fr;}
+  .platform-cards{grid-template-columns:repeat(2,1fr);}
+  .header-search{display:none;}
+  .tool-banner{grid-template-columns:1fr;}
+  .comment-form-row{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;gap:24px;}
+  .article-main-title{font-size:28px;}
+  .related-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ HOME PAGE ═══ -->
+<div id="page-home" class="page active">
+
+<div class="breaking-bar">
+  <strong>🔴 BREAKING:</strong> TikTok surpasses 2 billion monthly active users — Social commerce hits $1.2T globally in 2026
+</div>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="logo" onclick="showHome()">
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+      <span class="logo-name">Social<span>Pulse</span></span>
+    </div>
+    <div class="header-search">
+      <svg class="search-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="Search trends, creators, platforms…">
+    </div>
+    <div class="header-actions">
+      <button class="btn btn-ghost">Sign in</button>
+      <button class="btn btn-primary">Subscribe Free</button>
+    </div>
+  </div>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <span class="nav-link active" onclick="showHome()">🏠 Home</span>
+      <span class="nav-link" onclick="showArticle('tiktok')">🎵 TikTok</span>
+      <span class="nav-link" onclick="showArticle('instagram')">📸 Instagram</span>
+      <span class="nav-link" onclick="showArticle('youtube')">▶️ YouTube</span>
+      <span class="nav-link" onclick="showArticle('linkedin')">💼 LinkedIn</span>
+      <span class="nav-link" onclick="showArticle('creators')">⭐ Creators</span>
+      <span class="nav-link" onclick="showArticle('ai')">🤖 AI Tools</span>
+      <span class="nav-link" onclick="showArticle('marketing')">📊 Marketing</span>
+      <span class="nav-link" onclick="showArticle('commerce')">🛒 Social Commerce</span>
+    </div>
+  </nav>
+</header>
+
+<div class="ticker">
+  <span class="ticker-label">TRENDING</span>
+  <div class="ticker-track">
+    <span class="ticker-item">#MicroDrama — $7.8B projected revenue</span>
+    <span class="ticker-item">YouTube Shorts hits 100B daily views</span>
+    <span class="ticker-item">Social commerce overtakes e-commerce portals</span>
+    <span class="ticker-item">Bluesky reaches 50M active users</span>
+    <span class="ticker-item">Meta launches Creator Marketplace 2.0</span>
+    <span class="ticker-item">LinkedIn surpasses 1.1B registered members</span>
+    <span class="ticker-item">#MicroDrama — $7.8B projected revenue</span>
+    <span class="ticker-item">YouTube Shorts hits 100B daily views</span>
+    <span class="ticker-item">Social commerce overtakes e-commerce portals</span>
+    <span class="ticker-item">Bluesky reaches 50M active users</span>
+    <span class="ticker-item">Meta launches Creator Marketplace 2.0</span>
+    <span class="ticker-item">LinkedIn surpasses 1.1B registered members</span>
+  </div>
+</div>
+
+<main class="site-main">
+  <p class="breadcrumb"><span class="bc-link" onclick="showHome()">Home</span><span>›</span> Latest</p>
+
+  <!-- HERO -->
+  <section class="hero">
+    <article class="hero-feature" onclick="showArticle('main')">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1611605698335-8b1569810432?w=1200&q=80&auto=format&fit=crop" alt="Short form video creator" loading="eager">
+      <div class="hero-gradient"></div>
+      <div class="hero-content">
+        <span class="hero-tag">🔥 Cover Story</span>
+        <h1 class="hero-title">The Short-Form Video Empire: How TikTok, Reels & Shorts Are Reshaping the Entire Internet in 2026</h1>
+        <p class="hero-excerpt">5.66 billion social media users, platforms becoming search engines, and a $1.2 trillion commerce wave. Everything you need to know about navigating social media in 2026.</p>
+        <div class="hero-meta">
+          <div style="display:flex;align-items:center;gap:8px;"><div class="avatar">JL</div><span>Jordan Lee</span></div>
+          <span>June 29, 2026</span><span>·</span><span>12 min read</span><span>·</span><span>🔥 47K views</span>
+        </div>
+      </div>
+    </article>
+    <aside class="hero-sidebar">
+      <article class="sidebar-card" onclick="showArticle('ai')">
+        <img class="sidebar-card-img" src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&q=80&auto=format&fit=crop" alt="AI social media" loading="lazy">
+        <div class="sidebar-card-body">
+          <span class="card-tag tag-ai">🤖 AI Tools</span>
+          <h2 class="sidebar-card-title">AI Is Now Writing 40% of Brand Social Posts — Can You Tell the Difference?</h2>
+          <div class="sidebar-card-meta">5 min read · 28K views</div>
+        </div>
+      </article>
+      <article class="sidebar-card" onclick="showArticle('creators')">
+        <img class="sidebar-card-img" src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80&auto=format&fit=crop" alt="Creator economy" loading="lazy">
+        <div class="sidebar-card-body">
+          <span class="card-tag tag-creator">⭐ Creator Economy</span>
+          <h2 class="sidebar-card-title">Micro-Dramas Are Exploding: The $7.8B Format Brands Are Missing</h2>
+          <div class="sidebar-card-meta">8 min read · 41K views</div>
+        </div>
+      </article>
+      <article class="sidebar-card" onclick="showArticle('marketing')">
+        <img class="sidebar-card-img" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80&auto=format&fit=crop" alt="Social marketing" loading="lazy">
+        <div class="sidebar-card-body">
+          <span class="card-tag tag-trend">📈 Trend</span>
+          <h2 class="sidebar-card-title">Social Search Is Overtaking Google for Users Under 35 — What Brands Must Do Now</h2>
+          <div class="sidebar-card-meta">6 min read · 35K views</div>
+        </div>
+      </article>
+    </aside>
+  </section>
+
+  <!-- AD -->
+  <div class="ad-slot ad-slot-banner" style="margin:24px 0;">
+    <div><div class="ad-label">Advertisement</div><span>728×90 — Google AdSense Leaderboard</span></div>
+  </div>
+
+  <!-- PLATFORM STATS -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Platform Stats — June 2026</h2>
+      <span class="see-all" onclick="showArticle('marketing')">Full breakdown →</span>
+    </div>
+    <div class="platform-cards">
+      <div class="platform-card" onclick="showArticle('tiktok')">
+        <div class="platform-icon" style="background:#010101;">🎵</div>
+        <div class="platform-name">TikTok</div>
+        <div class="platform-stat" style="color:#010101;">2.1B</div>
+        <div class="platform-label">Monthly Active Users</div>
+        <div class="platform-change change-up">▲ 18% YoY</div>
+      </div>
+      <div class="platform-card" onclick="showArticle('instagram')">
+        <div class="platform-icon" style="background:#C13584;">📸</div>
+        <div class="platform-name">Instagram</div>
+        <div class="platform-stat" style="color:#C13584;">2.35B</div>
+        <div class="platform-label">Monthly Active Users</div>
+        <div class="platform-change change-up">▲ 9% YoY</div>
+      </div>
+      <div class="platform-card" onclick="showArticle('youtube')">
+        <div class="platform-icon" style="background:#FF0000;">▶️</div>
+        <div class="platform-name">YouTube</div>
+        <div class="platform-stat" style="color:#FF0000;">2.7B</div>
+        <div class="platform-label">Monthly Active Users</div>
+        <div class="platform-change change-up">▲ 7% YoY</div>
+      </div>
+      <div class="platform-card" onclick="showArticle('linkedin')">
+        <div class="platform-icon" style="background:#0A66C2;">💼</div>
+        <div class="platform-name">LinkedIn</div>
+        <div class="platform-stat" style="color:#0A66C2;">1.1B</div>
+        <div class="platform-label">Registered Members</div>
+        <div class="platform-change change-up">▲ 12% YoY</div>
+      </div>
+      <div class="platform-card">
+        <div class="platform-icon" style="background:#14171A;">𝕏</div>
+        <div class="platform-name">X / Twitter</div>
+        <div class="platform-stat" style="color:#14171A;">611M</div>
+        <div class="platform-label">Monthly Active Users</div>
+        <div class="platform-change change-down">▼ 3% YoY</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS + SIDEBAR -->
+  <section class="section">
+    <div class="two-col">
+      <div>
+        <div class="section-header">
+          <h2 class="section-title">Latest News</h2>
+          <span class="see-all">All articles →</span>
+        </div>
+        <div class="list-article" onclick="showArticle('tiktok')">
+          <img class="list-article-img" src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?w=300&q=80&auto=format&fit=crop" alt="TikTok" loading="lazy">
+          <div>
+            <span class="card-tag tag-tiktok" style="margin-bottom:6px;display:inline-block;">TikTok</span>
+            <h3 class="list-article-title">TikTok's New "Social Search" Feature Lets Users Find Content Like Google — and Brands Are Panicking</h3>
+            <p class="list-article-excerpt">The platform's upgraded in-app search now surfaces long-tail queries with video-first results, making captions more important than ever.</p>
+            <div class="list-article-meta">Sarah Kim · 4 min read · 22K views</div>
+          </div>
+        </div>
+        <div class="list-article" onclick="showArticle('instagram')">
+          <img class="list-article-img" src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=300&q=80&auto=format&fit=crop" alt="Instagram" loading="lazy">
+          <div>
+            <span class="card-tag tag-instagram" style="margin-bottom:6px;display:inline-block;">Instagram</span>
+            <h3 class="list-article-title">Instagram Reels Algorithm Change: What Got 10M Views Last Month Won't Work Today</h3>
+            <p class="list-article-excerpt">Meta's latest update rewards "save and share" signals over likes, fundamentally shifting what Reels get pushed to Explore.</p>
+            <div class="list-article-meta">Marcus Patel · 6 min read · 31K views</div>
+          </div>
+        </div>
+        <div class="list-article" onclick="showArticle('creators')">
+          <img class="list-article-img" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&q=80&auto=format&fit=crop" alt="Creators" loading="lazy">
+          <div>
+            <span class="card-tag tag-creator" style="margin-bottom:6px;display:inline-block;">Creator Economy</span>
+            <h3 class="list-article-title">Creator Burnout Is Real: Why 60% of Full-Time Influencers Are Cutting Back in 2026</h3>
+            <p class="list-article-excerpt">Algorithm anxiety is taking a real toll. Why the smartest creators are adopting "slow content" strategies instead.</p>
+            <div class="list-article-meta">Aisha Thompson · 9 min read · 18K views</div>
+          </div>
+        </div>
+        <div class="list-article" onclick="showArticle('commerce')">
+          <img class="list-article-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&q=80&auto=format&fit=crop" alt="Commerce" loading="lazy">
+          <div>
+            <span class="card-tag tag-marketing" style="margin-bottom:6px;display:inline-block;">Marketing</span>
+            <h3 class="list-article-title">Social Commerce Will Hit $1.2 Trillion in 2026 — Here's Which Platforms Win</h3>
+            <p class="list-article-excerpt">We break down ROI data across TikTok Shop, Instagram Checkout, and Pinterest Shopping.</p>
+            <div class="list-article-meta">Chen Liu · 7 min read · 44K views</div>
+          </div>
+        </div>
+        <div class="list-article" onclick="showArticle('youtube')">
+          <img class="list-article-img" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=300&q=80&auto=format&fit=crop" alt="YouTube" loading="lazy">
+          <div>
+            <span class="card-tag tag-youtube" style="margin-bottom:6px;display:inline-block;">YouTube</span>
+            <h3 class="list-article-title">Long-Form Content is Back: YouTube Crosses 100 Billion Shorts Views While Watch Time on 10-Minute+ Videos Grows 40%</h3>
+            <p class="list-article-excerpt">Audiences don't just want quick hits — they crave depth. Creators who do both are the new royalty.</p>
+            <div class="list-article-meta">Jordan Lee · 5 min read · 29K views</div>
+          </div>
+        </div>
+        <div class="pagination">
+          <button class="page-btn pn">← Prev</button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">…</button>
+          <button class="page-btn">12</button>
+          <button class="page-btn pn">Next →</button>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside>
+        <div class="sticky-sidebar">
+          <div class="newsletter-widget">
+            <div style="font-size:28px;margin-bottom:10px;">⚡</div>
+            <h3>Stay Ahead of Every Trend</h3>
+            <p>Join 84,000+ marketers getting the SocialPulse daily briefing.</p>
+            <input class="newsletter-input" type="email" placeholder="your@email.com" id="nl-email">
+            <button class="newsletter-btn" onclick="subscribe()">Get the daily briefing →</button>
+            <p style="font-size:11px;color:rgba(255,255,255,0.35);margin-top:10px;">No spam. Unsubscribe any time.</p>
+          </div>
+          <div class="widget">
+            <div class="widget-header"><span class="widget-dot"></span> What's Trending</div>
+            <div style="padding:0 18px;">
+              <div class="trending-item" onclick="showArticle('tiktok')">
+                <div class="trending-num">1</div>
+                <div class="trending-content">
+                  <div class="trending-tag">TikTok</div>
+                  <div class="trending-title">#MicroDrama format explodes with Gen Alpha</div>
+                  <div class="trending-meta">128K posts today</div>
+                </div>
+              </div>
+              <div class="trending-item" onclick="showArticle('ai')">
+                <div class="trending-num">2</div>
+                <div class="trending-content">
+                  <div class="trending-tag">AI Tools</div>
+                  <div class="trending-title">Sora text-to-video hits 1B clips generated</div>
+                  <div class="trending-meta">92K mentions</div>
+                </div>
+              </div>
+              <div class="trending-item" onclick="showArticle('instagram')">
+                <div class="trending-num">3</div>
+                <div class="trending-content">
+                  <div class="trending-tag">Instagram</div>
+                  <div class="trending-title">Reels save-rate becomes top ranking signal</div>
+                  <div class="trending-meta">74K posts</div>
+                </div>
+              </div>
+              <div class="trending-item" onclick="showArticle('commerce')">
+                <div class="trending-num">4</div>
+                <div class="trending-content">
+                  <div class="trending-tag">Commerce</div>
+                  <div class="trending-title">TikTok Shop crosses $100B GMV milestone</div>
+                  <div class="trending-meta">61K discussions</div>
+                </div>
+              </div>
+              <div class="trending-item" onclick="showArticle('youtube')">
+                <div class="trending-num">5</div>
+                <div class="trending-content">
+                  <div class="trending-tag">YouTube</div>
+                  <div class="trending-title">YouTube Premium reaches 100M subscribers</div>
+                  <div class="trending-meta">48K shares</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ad-slot ad-slot-square">
+            <div><div class="ad-label">Advertisement</div><span>300×250 — Google AdSense</span></div>
+          </div>
+          <div class="widget">
+            <div class="widget-header"><span class="widget-dot" style="background:var(--accent3)"></span> Popular Topics</div>
+            <div class="widget-body">
+              <div class="tags-cloud">
+                <span class="tag-pill" onclick="showArticle('tiktok')">#TikTokSEO</span>
+                <span class="tag-pill" onclick="showArticle('creators')">#CreatorEconomy</span>
+                <span class="tag-pill" onclick="showArticle('marketing')">#SocialSEO</span>
+                <span class="tag-pill" onclick="showArticle('commerce')">#TikTokShop</span>
+                <span class="tag-pill" onclick="showArticle('tiktok')">#MicroDrama</span>
+                <span class="tag-pill" onclick="showArticle('ai')">#AIContent</span>
+                <span class="tag-pill" onclick="showArticle('creators')">#UGC</span>
+                <span class="tag-pill" onclick="showArticle('instagram')">#Reels</span>
+                <span class="tag-pill" onclick="showArticle('marketing')">#SocialCommerce</span>
+              </div>
+            </div>
+          </div>
+          <div class="widget">
+            <div class="widget-header"><span class="widget-dot" style="background:var(--accent2)"></span> Weekly Poll</div>
+            <div class="widget-body">
+              <div class="poll-question">Which platform do you use most for content discovery?</div>
+              <div class="poll-option" onclick="vote(this)"><div class="poll-bar" style="width:42%;"></div><div class="poll-label"><span>TikTok</span><span class="poll-pct">42%</span></div></div>
+              <div class="poll-option" onclick="vote(this)"><div class="poll-bar" style="width:28%;"></div><div class="poll-label"><span>YouTube</span><span class="poll-pct">28%</span></div></div>
+              <div class="poll-option" onclick="vote(this)"><div class="poll-bar" style="width:18%;"></div><div class="poll-label"><span>Instagram</span><span class="poll-pct">18%</span></div></div>
+              <div class="poll-option" onclick="vote(this)"><div class="poll-bar" style="width:12%;"></div><div class="poll-label"><span>Google / Other</span><span class="poll-pct">12%</span></div></div>
+              <p style="font-size:11px;color:var(--muted);margin-top:10px;">2,847 votes · Ends July 6</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- VIRAL VIDEOS -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">🎬 Viral Right Now</h2>
+      <span class="see-all">All videos →</span>
+    </div>
+    <div class="video-grid">
+      <article class="video-card" onclick="showArticle('tiktok')">
+        <div class="video-thumb">
+          <img src="https://images.unsplash.com/photo-1542103749-8ef59b94f47e?w=500&q=80&auto=format&fit=crop" alt="Street food video" loading="lazy">
+          <div class="play-btn"><div class="play-circle"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+          <span class="video-duration">2:34</span><span class="video-platform-badge">TikTok</span>
+        </div>
+        <div class="video-body">
+          <span class="card-tag tag-tiktok" style="margin-bottom:8px;display:inline-block;">Food</span>
+          <h3 class="video-title">"This $2 street taco changed my life" — The viral mukbang trend flipping food content</h3>
+          <div class="video-stats"><span>👁️ 48.2M</span><span>❤️ 4.1M</span><span>🔗 Share</span></div>
+        </div>
+      </article>
+      <article class="video-card" onclick="showArticle('instagram')">
+        <div class="video-thumb">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80&auto=format&fit=crop" alt="Fitness reel" loading="lazy">
+          <div class="play-btn"><div class="play-circle"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+          <span class="video-duration">0:58</span><span class="video-platform-badge">Reels</span>
+        </div>
+        <div class="video-body">
+          <span class="card-tag tag-instagram" style="margin-bottom:8px;display:inline-block;">Fitness</span>
+          <h3 class="video-title">The "5-Minute Morning Routine" reel format driving 10× saves over standard workout posts</h3>
+          <div class="video-stats"><span>👁️ 31.7M</span><span>❤️ 2.8M</span><span>🔗 Share</span></div>
+        </div>
+      </article>
+      <article class="video-card" onclick="showArticle('youtube')">
+        <div class="video-thumb">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&q=80&auto=format&fit=crop" alt="Tech review" loading="lazy">
+          <div class="play-btn"><div class="play-circle"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+          <span class="video-duration">14:22</span><span class="video-platform-badge">YouTube</span>
+        </div>
+        <div class="video-body">
+          <span class="card-tag tag-youtube" style="margin-bottom:8px;display:inline-block;">Tech</span>
+          <h3 class="video-title">I replaced every AI tool in my workflow for 30 days — here's what actually stuck</h3>
+          <div class="video-stats"><span>👁️ 22.4M</span><span>❤️ 1.2M</span><span>🔗 Share</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TRENDING ARTICLES -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">📈 Trending Articles</h2>
+      <span class="see-all">See all →</span>
+    </div>
+    <div class="card-grid grid-4">
+      <article class="article-card" onclick="showArticle('marketing')">
+        <img class="article-card-img" src="https://images.unsplash.com/photo-1607703703520-bb638e84caf2?w=400&q=80&auto=format&fit=crop" alt="Social SEO" loading="lazy">
+        <div class="article-card-body">
+          <span class="card-tag tag-trend">Social SEO</span>
+          <h3 class="article-card-title">How to Rank #1 on TikTok Search: The Complete 2026 Playbook</h3>
+          <p class="article-card-excerpt">Captions, on-screen text, hashtags, and audio — exactly how to optimize each for TikTok search.</p>
+          <div class="article-meta"><span>8 min</span><span class="sep">·</span><span>39K views</span><span class="sep">·</span><span class="hot-badge">🔥 Hot</span></div>
+        </div>
+      </article>
+      <article class="article-card" onclick="showArticle('ai')">
+        <img class="article-card-img" src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=400&q=80&auto=format&fit=crop" alt="AI content" loading="lazy">
+        <div class="article-card-body">
+          <span class="card-tag tag-ai">AI Content</span>
+          <h3 class="article-card-title">30% of Consumers Avoid Brands Using AI Ads — But AI Research Is Still Essential</h3>
+          <p class="article-card-excerpt">The exact line between AI that helps and AI that hurts your brand reputation.</p>
+          <div class="article-meta"><span>5 min</span><span class="sep">·</span><span>27K views</span></div>
+        </div>
+      </article>
+      <article class="article-card" onclick="showArticle('creators')">
+        <img class="article-card-img" src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?w=400&q=80&auto=format&fit=crop" alt="Influencer" loading="lazy">
+        <div class="article-card-body">
+          <span class="card-tag tag-creator">Creators</span>
+          <h3 class="article-card-title">Nano-Influencers (1K–10K Followers) Now Drive Higher ROI Than Mega-Stars</h3>
+          <p class="article-card-excerpt">New data from 2,000 campaigns shows niche audiences convert at 4× the rate of celebrity promotions.</p>
+          <div class="article-meta"><span>6 min</span><span class="sep">·</span><span>33K views</span><span class="sep">·</span><span class="hot-badge">🔥 Hot</span></div>
+        </div>
+      </article>
+      <article class="article-card" onclick="showArticle('commerce')">
+        <img class="article-card-img" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&q=80&auto=format&fit=crop" alt="Commerce" loading="lazy">
+        <div class="article-card-body">
+          <span class="card-tag tag-news">Platform News</span>
+          <h3 class="article-card-title">TikTok Shop vs Instagram Checkout vs Pinterest: Which Wins for Social Commerce in 2026?</h3>
+          <p class="article-card-excerpt">We compared conversion rates, fees, and audience reach across all three major social shopping platforms.</p>
+          <div class="article-meta"><span>7 min</span><span class="sep">·</span><span>51K views</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROMO BANNER -->
+  <section class="section" style="padding-top:0;">
+    <div class="tool-banner">
+      <div>
+        <div class="tool-banner-eyebrow">🛠️ Free Tool</div>
+        <div class="tool-banner-title">Social Media Audit Checklist 2026 — Free Download</div>
+        <div class="tool-banner-desc">47 actionable items across TikTok, Instagram, YouTube, LinkedIn and X. Find exactly what's holding your growth back.</div>
+      </div>
+      <span class="tool-banner-btn">Download Free →</span>
+    </div>
+  </section>
+
+  <!-- COMMENT -->
+  <div class="comment-section">
+    <h2 class="comment-title">Join the Discussion (247 comments)</h2>
+    <form class="comment-form" onsubmit="return false;">
+      <div class="comment-form-row">
+        <input class="form-input" type="text" placeholder="Your name">
+        <input class="form-input" type="email" placeholder="Email (not published)">
+      </div>
+      <textarea class="form-input form-textarea" placeholder="Share your thoughts on social media trends…"></textarea>
+      <button type="submit" class="comment-submit" onclick="postComment(this)">Post Comment →</button>
+    </form>
+  </div>
+
+  <div class="ad-slot ad-slot-banner" style="margin:40px 0 0;">
+    <div><div class="ad-label">Advertisement</div><span>728×90 — Google AdSense</span></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="logo-mark"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:white;"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <span class="footer-logo-name">Social<span>Pulse</span></span>
+        </div>
+        <p class="footer-desc">Your daily destination for social media news, platform trends, creator economy insights, and digital marketing intelligence. Trusted by 84,000+ marketers and creators worldwide.</p>
+        <div class="footer-socials">
+          <button class="footer-social-btn">𝕏</button>
+          <button class="footer-social-btn">📸</button>
+          <button class="footer-social-btn">🎵</button>
+          <button class="footer-social-btn">▶️</button>
+          <button class="footer-social-btn">💼</button>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Topics</div>
+        <div class="footer-links">
+          <span class="footer-link" onclick="showArticle('tiktok')">TikTok Trends</span>
+          <span class="footer-link" onclick="showArticle('instagram')">Instagram News</span>
+          <span class="footer-link" onclick="showArticle('youtube')">YouTube Updates</span>
+          <span class="footer-link" onclick="showArticle('linkedin')">LinkedIn Insights</span>
+          <span class="footer-link" onclick="showArticle('creators')">Creator Economy</span>
+          <span class="footer-link" onclick="showArticle('ai')">AI Tools</span>
+          <span class="footer-link" onclick="showArticle('commerce')">Social Commerce</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Resources</div>
+        <div class="footer-links">
+          <span class="footer-link">Free Newsletter</span>
+          <span class="footer-link">Content Calendar</span>
+          <span class="footer-link">Platform Stats</span>
+          <span class="footer-link">Trend Reports</span>
+          <span class="footer-link">Creator Directory</span>
+          <span class="footer-link">Marketing Guides</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <div class="footer-links">
+          <span class="footer-link">About SocialPulse</span>
+          <span class="footer-link">Write for Us</span>
+          <span class="footer-link">Advertise</span>
+          <span class="footer-link">Contact Us</span>
+          <span class="footer-link">Careers</span>
+          <span class="footer-link">RSS Feed</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SocialPulse Media. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <span class="footer-bottom-link">Privacy Policy</span>
+        <span class="footer-bottom-link">Terms of Use</span>
+        <span class="footer-bottom-link">Cookie Settings</span>
+        <span class="footer-bottom-link">Sitemap</span>
+      </div>
+    </div>
+  </div>
+</footer>
+</div><!-- end page-home -->
+
+
+<!-- ═══════════════════════════════════════════ ARTICLE PAGES ═══ -->
+<div id="page-article" class="page">
+<header class="site-header">
+  <div class="header-top">
+    <div class="logo" onclick="showHome()">
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+      <span class="logo-name">Social<span>Pulse</span></span>
+    </div>
+    <div class="header-search">
+      <svg class="search-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="Search trends, creators, platforms…">
+    </div>
+    <div class="header-actions">
+      <button class="btn btn-ghost">Sign in</button>
+      <button class="btn btn-primary">Subscribe Free</button>
+    </div>
+  </div>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <span class="nav-link" onclick="showHome()">🏠 Home</span>
+      <span class="nav-link" onclick="showArticle('tiktok')">🎵 TikTok</span>
+      <span class="nav-link" onclick="showArticle('instagram')">📸 Instagram</span>
+      <span class="nav-link" onclick="showArticle('youtube')">▶️ YouTube</span>
+      <span class="nav-link" onclick="showArticle('linkedin')">💼 LinkedIn</span>
+      <span class="nav-link" onclick="showArticle('creators')">⭐ Creators</span>
+      <span class="nav-link" onclick="showArticle('ai')">🤖 AI Tools</span>
+      <span class="nav-link" onclick="showArticle('marketing')">📊 Marketing</span>
+      <span class="nav-link" onclick="showArticle('commerce')">🛒 Social Commerce</span>
+    </div>
+  </nav>
+</header>
+
+<div class="article-page">
+  <p class="breadcrumb"><span class="bc-link" onclick="showHome()">Home</span><span>›</span><span id="article-category">TikTok</span><span>›</span><span id="article-breadcrumb-title">Article</span></p>
+  <div class="article-layout">
+    <article>
+      <span class="back-btn" onclick="showHome()">← Back to Home</span>
+      <div class="article-header">
+        <span class="article-tag" id="article-tag"></span>
+        <h1 class="article-main-title" id="article-title"></h1>
+        <p class="article-subtitle" id="article-subtitle"></p>
+        <div class="article-byline">
+          <div class="byline-avatar" id="article-avatar"></div>
+          <div class="byline-info">
+            <div class="byline-name" id="article-author"></div>
+            <div class="byline-meta" id="article-meta"></div>
+          </div>
+        </div>
+      </div>
+      <img class="article-hero-img" id="article-img" src="" alt="">
+      <p class="article-img-caption" id="article-caption"></p>
+      <div class="article-body" id="article-body"></div>
+      <div class="article-share">
+        <span class="share-label">Share this article:</span>
+        <button class="share-btn">𝕏 Twitter</button>
+        <button class="share-btn">📘 Facebook</button>
+        <button class="share-btn">💼 LinkedIn</button>
+        <button class="share-btn">🔗 Copy Link</button>
+      </div>
+      <!-- Related Articles -->
+      <div>
+        <div class="section-header" style="margin-top:32px;">
+          <h2 class="section-title" style="font-size:20px;">You Might Also Like</h2>
+        </div>
+        <div class="related-grid" id="related-articles"></div>
+      </div>
+      <!-- Comments -->
+      <div class="comment-section">
+        <h2 class="comment-title">Join the Discussion</h2>
+        <form class="comment-form" onsubmit="return false;">
+          <div class="comment-form-row">
+            <input class="form-input" type="text" placeholder="Your name">
+            <input class="form-input" type="email" placeholder="Email (not published)">
+          </div>
+          <textarea class="form-input form-textarea" placeholder="Share your thoughts…"></textarea>
+          <button type="submit" class="comment-submit" onclick="postComment(this)">Post Comment →</button>
+        </form>
+      </div>
+    </article>
+
+    <!-- Sidebar -->
+    <aside>
+      <div class="sticky-sidebar">
+        <div class="newsletter-widget">
+          <div style="font-size:28px;margin-bottom:10px;">⚡</div>
+          <h3>Stay Ahead</h3>
+          <p>84,000+ marketers get the SocialPulse daily briefing.</p>
+          <input class="newsletter-input" type="email" placeholder="your@email.com">
+          <button class="newsletter-btn" onclick="subscribe()">Subscribe Free →</button>
+        </div>
+        <div class="widget">
+          <div class="widget-header"><span class="widget-dot"></span> What's Trending</div>
+          <div style="padding:0 18px;">
+            <div class="trending-item" onclick="showArticle('tiktok')"><div class="trending-num">1</div><div><div class="trending-tag">TikTok</div><div class="trending-title">#MicroDrama explodes with Gen Alpha</div></div></div>
+            <div class="trending-item" onclick="showArticle('ai')"><div class="trending-num">2</div><div><div class="trending-tag">AI</div><div class="trending-title">Sora hits 1 billion clips generated</div></div></div>
+            <div class="trending-item" onclick="showArticle('instagram')"><div class="trending-num">3</div><div><div class="trending-tag">Instagram</div><div class="trending-title">Save-rate becomes top Reels signal</div></div></div>
+            <div class="trending-item" onclick="showArticle('commerce')"><div class="trending-num">4</div><div><div class="trending-tag">Commerce</div><div class="trending-title">TikTok Shop crosses $100B GMV</div></div></div>
+          </div>
+        </div>
+        <div class="ad-slot ad-slot-square">
+          <div><div class="ad-label">Advertisement</div><span>300×250 — Google AdSense</span></div>
+        </div>
+        <div class="widget">
+          <div class="widget-header"><span class="widget-dot" style="background:var(--accent3)"></span> Popular Topics</div>
+          <div class="widget-body">
+            <div class="tags-cloud">
+              <span class="tag-pill" onclick="showArticle('tiktok')">#TikTokSEO</span>
+              <span class="tag-pill" onclick="showArticle('ai')">#AIContent</span>
+              <span class="tag-pill" onclick="showArticle('creators')">#UGC</span>
+              <span class="tag-pill" onclick="showArticle('instagram')">#Reels</span>
+              <span class="tag-pill" onclick="showArticle('commerce')">#SocialCommerce</span>
+              <span class="tag-pill" onclick="showArticle('marketing')">#GrowthHacks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="logo-mark"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:white;"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <span class="footer-logo-name">Social<span>Pulse</span></span>
+        </div>
+        <p class="footer-desc">Your daily destination for social media news and digital marketing intelligence.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Topics</div>
+        <div class="footer-links">
+          <span class="footer-link" onclick="showArticle('tiktok')">TikTok Trends</span>
+          <span class="footer-link" onclick="showArticle('instagram')">Instagram News</span>
+          <span class="footer-link" onclick="showArticle('youtube')">YouTube Updates</span>
+          <span class="footer-link" onclick="showArticle('creators')">Creator Economy</span>
+          <span class="footer-link" onclick="showArticle('ai')">AI Tools</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <div class="footer-links">
+          <span class="footer-link">About Us</span>
+          <span class="footer-link">Write for Us</span>
+          <span class="footer-link">Advertise</span>
+          <span class="footer-link">Contact</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Legal</div>
+        <div class="footer-links">
+          <span class="footer-link">Privacy Policy</span>
+          <span class="footer-link">Terms of Use</span>
+          <span class="footer-link">Cookie Policy</span>
+          <span class="footer-link">Sitemap</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SocialPulse Media. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+</div><!-- end page-article -->
+
+
+<script>
+var articles = {
+  main: {
+    tag:'🔥 Cover Story', tagClass:'tag-trend', category:'Trending',
+    title:'The Short-Form Video Empire: How TikTok, Reels & Shorts Are Reshaping the Entire Internet in 2026',
+    subtitle:'5.66 billion social media users, platforms becoming search engines, and a $1.2 trillion commerce wave. Everything you need to know.',
+    author:'Jordan Lee', avatar:'JL', avatarColor:'#6C47FF',
+    date:'June 29, 2026', read:'12 min read', views:'47K views',
+    img:'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=1200&q=80&auto=format&fit=crop',
+    caption:'Short-form video is now the dominant content format across every major social platform. (Photo: Unsplash)',
+    body:`<h2>The Numbers Don't Lie</h2>
+<p>Social media has officially crossed a milestone that would have seemed impossible a decade ago: there are now <strong>5.66 billion</strong> social media users worldwide — meaning people with social accounts outnumber those without, nearly two to one.</p>
+<p>But the real story isn't just how many people are on social media. It's how they're using it — and how platforms have quietly become the primary layer of the internet for an entire generation.</p>
+<blockquote>"Social media in 2026 is not just a place to connect with friends. It's where people shop, search, learn, and build careers." — Hootsuite 2026 Social Trends Report</blockquote>
+<h2>Short-Form Video: Still King, But Evolving</h2>
+<p>TikTok didn't just pioneer short-form video — it rewired human attention spans. The platform now boasts <strong>2.1 billion monthly active users</strong>, with 51% of people naming short-form video as their top influencer for impulse purchases.</p>
+<p>But here's what most marketers miss: long-form content is making a dramatic comeback. YouTube's data shows that while Shorts gets 100 billion daily views, watch time on videos longer than 10 minutes has grown by 40% year-over-year.</p>
+<div class="highlight-box">
+<strong>💡 Key Insight:</strong> Use short-form video (under 60 seconds) for discovery and awareness. Use long-form video (8–20 minutes) for trust-building and conversion. They serve different stages of the customer journey.
+</div>
+<h2>Social Platforms Are the New Search Engines</h2>
+<p>One of the most significant behavioral shifts of 2026: nearly <strong>one in three consumers under 35 now skip Google entirely</strong>, starting their search journey on TikTok, Instagram, or YouTube instead.</p>
+<p>Google has responded by indexing public Instagram content and short-form videos from other platforms. This creates a new opportunity — and a new responsibility — for every content creator and brand.</p>
+<h3>How to Optimize for Social Search</h3>
+<ul>
+<li>Write intentional captions that answer real questions</li>
+<li>Use natural language that matches how people actually speak</li>
+<li>Include relevant keywords in the first line of every caption</li>
+<li>Align on-screen text with your spoken audio — AI indexes both</li>
+<li>Lead with your core expertise in the opening 3 seconds</li>
+</ul>
+<h2>The Creator Economy Matures</h2>
+<p>The creator economy is no longer a side hustle — it's a $500 billion industry. But success looks different in 2026. The mega-influencer era is giving way to a world where <strong>nano-influencers</strong> (1K–10K followers) deliver 4× the conversion rate of celebrity promotions.</p>
+<p>Authenticity has become the scarcest and most valuable commodity on social media. Audiences can smell polished, scripted content from miles away — and they scroll right past it.</p>
+<h2>What You Should Do Right Now</h2>
+<p>Whether you're a brand, a creator, or a marketer, the playbook for 2026 is clear:</p>
+<ol>
+<li><strong>Optimize every post for search</strong> — captions, hashtags, audio, and on-screen text</li>
+<li><strong>Invest in authentic storytelling</strong> over polished production</li>
+<li><strong>Build community</strong> — not just an audience</li>
+<li><strong>Experiment with short AND long-form content</strong> — they serve different purposes</li>
+<li><strong>Start with TikTok for discovery</strong>, YouTube for depth, Instagram for visual identity</li>
+</ol>`,
+    related:['tiktok','instagram','youtube']
+  },
+
+  tiktok: {
+    tag:'🎵 TikTok', tagClass:'tag-tiktok', category:'TikTok',
+    title:"TikTok's New Social Search Feature Is Changing Everything — Here's How to Rank #1",
+    subtitle:"TikTok SEO is now a full discipline. With 2.1 billion users treating the app like Google, your caption strategy needs a complete overhaul.",
+    author:'Sarah Kim', avatar:'SK', avatarColor:'#010101',
+    date:'June 28, 2026', read:'6 min read', views:'38K views',
+    img:'https://images.unsplash.com/photo-1616469829581-73993eb86b02?w=1200&q=80&auto=format&fit=crop',
+    caption:'TikTok\'s search bar is now used by over 800 million users monthly to find content, products, and information. (Photo: Unsplash)',
+    body:`<h2>TikTok Is Now a Search Engine</h2>
+<p>A Google senior vice president confirmed that <strong>40% of young people use TikTok or Instagram as search engines</strong>. For TikTok specifically, this isn't just a trend — it's a fundamental shift in how the platform functions and how its algorithm works.</p>
+<p>TikTok's upgraded search now surfaces long-tail queries with video-first results. Type "best skincare routine for oily skin" into TikTok's search bar, and you'll see thousands of videos ranked by relevance — not just by follower count or recency.</p>
+<blockquote>"Captions used to be an afterthought. In 2026, they're your SEO metadata." — TikTok Creator Marketing Lead</blockquote>
+<h2>The TikTok SEO Ranking Factors</h2>
+<p>TikTok's search algorithm weighs these signals to determine where your content ranks:</p>
+<ul>
+<li><strong>Caption keywords</strong> — include your target keyword in the first line</li>
+<li><strong>On-screen text</strong> — TikTok's AI reads and indexes text overlays</li>
+<li><strong>Spoken audio</strong> — your actual words are transcribed and indexed</li>
+<li><strong>Hashtags</strong> — use 3–5 specific hashtags, not 20 broad ones</li>
+<li><strong>Video completion rate</strong> — the more people watch till the end, the higher you rank</li>
+<li><strong>Save rate</strong> — saves signal high-value content to the algorithm</li>
+</ul>
+<h2>Step-by-Step: Optimizing a TikTok for Search</h2>
+<div class="highlight-box">
+<strong>Example: Skincare tutorial</strong><br><br>
+❌ Old caption: "My fav skincare routine 🧴✨ #skincare #beauty"<br><br>
+✅ New caption: "Best skincare routine for oily skin in 2026 — dermatologist-approved 3 step routine that cleared my skin in 30 days #oilyskin #skincareenthusiast #acneprone"
+</div>
+<h2>The Micro-Drama Revolution</h2>
+<p>One of TikTok's biggest trends of 2026 is the explosion of "micro-dramas" — serialized short-form story content that keeps viewers coming back episode after episode. Deloitte predicts this format will generate <strong>$7.8 billion in revenue</strong> this year alone.</p>
+<p>For brands, this opens a powerful new content strategy: instead of one-off promotional videos, create serialized content where your product or story unfolds across multiple episodes.</p>
+<h2>TikTok Shop: The Commerce Layer</h2>
+<p>TikTok Shop crossed $100 billion in Gross Merchandise Value (GMV) in 2025, and 2026 numbers are tracking even higher. Products with native TikTok Shop integrations appear in search results with direct purchase buttons — eliminating friction between discovery and purchase.</p>`,
+    related:['instagram','creators','commerce']
+  },
+
+  instagram: {
+    tag:'📸 Instagram', tagClass:'tag-instagram', category:'Instagram',
+    title:"Instagram Reels Algorithm 2026: The Save-Rate Update That Changes Everything",
+    subtitle:"Meta's latest algorithm shift means what worked last month won't work today. Here's the complete breakdown of what Instagram is rewarding right now.",
+    author:'Marcus Patel', avatar:'MP', avatarColor:'#C13584',
+    date:'June 27, 2026', read:'7 min read', views:'31K views',
+    img:'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&q=80&auto=format&fit=crop',
+    caption:'Instagram Reels now reaches over 2.35 billion monthly users. The platform\'s algorithm update is the biggest shift since the introduction of Reels itself.',
+    body:`<h2>What Changed in the Algorithm</h2>
+<p>Instagram's latest algorithm update, confirmed by Meta's engineering blog, now weights <strong>save and share signals</strong> approximately 3× more heavily than likes or comments when determining Reels distribution.</p>
+<p>This is a massive shift. Previously, likes and comments were the primary engagement signals. Now, Instagram is asking: "Is this content valuable enough for someone to save for later or share with a friend?"</p>
+<blockquote>"We're rewarding content that people find genuinely useful, entertaining, or inspiring — not just content that gets a quick like." — Instagram Head of Product, 2026</blockquote>
+<h2>Content Types That Get Saved</h2>
+<p>Not all content is saved equally. Our analysis of 10,000 Reels shows these content types earn the highest save rates:</p>
+<ul>
+<li><strong>Tutorial and how-to content</strong> — people save these to watch again later (avg. 8.2% save rate)</li>
+<li><strong>Recipe content</strong> — particularly quick, visual recipe demos (avg. 7.1% save rate)</li>
+<li><strong>Educational "did you know" content</strong> — surprising facts and statistics (avg. 6.8% save rate)</li>
+<li><strong>Travel destination inspiration</strong> — saved for future trip planning (avg. 5.9% save rate)</li>
+<li><strong>Outfit inspiration and fashion</strong> — saved for reference when shopping (avg. 5.4% save rate)</li>
+</ul>
+<h2>The Hook Formula That Works in 2026</h2>
+<div class="highlight-box">
+<strong>The 3-Second Rule for Reels</strong><br><br>
+You have exactly 3 seconds to stop the scroll. The most effective hooks in 2026 follow this formula:<br><br>
+<strong>"[Surprising claim] + [specific number] + [for your target audience]"</strong><br><br>
+Example: "Most skincare brands don't want you to know this — 3 ingredients that dermatologists say to avoid (especially if you're over 30)"
+</div>
+<h2>Instagram SEO: The New Reality</h2>
+<p>Google has begun indexing public Instagram content. This means your Reels and posts can now appear in Google search results — but only if you optimize your captions with real keywords.</p>
+<p>Key Instagram SEO tactics for 2026:</p>
+<ul>
+<li>Use your target keyword in your account bio, post captions, and alt text</li>
+<li>Write captions of at least 150 words for educational content</li>
+<li>Use location tags consistently</li>
+<li>Respond to comments within the first hour (boosts ranking signals)</li>
+</ul>
+<h2>What to Stop Doing Immediately</h2>
+<p>Based on Instagram's algorithm changes, these tactics are now actively hurting your reach:</p>
+<ul>
+<li>Using more than 5–7 hashtags (algorithm now penalizes "hashtag stuffing")</li>
+<li>Posting at inconsistent times — the algorithm rewards posting cadence</li>
+<li>Buying likes or followers — detection has become sophisticated</li>
+<li>Cross-posting unedited TikTok videos with TikTok watermarks</li>
+</ul>`,
+    related:['tiktok','youtube','marketing']
+  },
+
+  youtube: {
+    tag:'▶️ YouTube', tagClass:'tag-youtube', category:'YouTube',
+    title:"YouTube in 2026: Why Long-Form Content Is Back and How to Win on Both Shorts and Full Videos",
+    subtitle:"YouTube has cracked the code on a counterintuitive insight: people want both quick hits AND deep dives. Here's how the smartest creators are capitalizing on both.",
+    author:'Jordan Lee', avatar:'JL', avatarColor:'#FF0000',
+    date:'June 26, 2026', read:'9 min read', views:'29K views',
+    img:'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80&auto=format&fit=crop',
+    caption:'YouTube\'s 2.7 billion monthly active users now consume a mix of Shorts (under 60 seconds) and long-form videos (10+ minutes) in the same session.',
+    body:`<h2>The YouTube Paradox of 2026</h2>
+<p>Here's something counterintuitive: the same platform where YouTube Shorts gets <strong>100 billion daily views</strong> is also seeing a 40% increase in watch time for videos longer than 10 minutes.</p>
+<p>This isn't a contradiction — it reflects how audiences actually consume content. They use Shorts for discovery and entertainment during idle moments. They use long-form videos for learning, research, and decision-making.</p>
+<blockquote>"YouTube is the only platform in the world where someone goes from watching 30 seconds of a cake tutorial to sitting through a 3-hour documentary about the history of sugar. That range is our superpower." — YouTube CEO, Creator Summit 2026</blockquote>
+<h2>The Dual-Format Strategy</h2>
+<p>The most successful YouTube creators in 2026 aren't choosing between Shorts and long-form — they're using both strategically:</p>
+<div class="highlight-box">
+<strong>The Content Pyramid Strategy</strong><br><br>
+📱 <strong>Shorts (under 60 seconds):</strong> Hook new viewers, tease topics, share quick tips. Post daily or near-daily. This is your discovery engine.<br><br>
+📹 <strong>Long-form (10–30 minutes):</strong> Deep dives, tutorials, case studies. Post 1–2× per week. This is where subscribers are made and trust is built.<br><br>
+🎙️ <strong>Podcasts / Deep Dives (60+ minutes):</strong> Authority-building content. Post monthly. This is your premium content tier.
+</div>
+<h2>YouTube SEO in 2026</h2>
+<p>YouTube is the world's second-largest search engine after Google — and Google owns both. This creates a unique SEO opportunity where good YouTube SEO can rank your content on both platforms simultaneously.</p>
+<h3>The YouTube SEO Checklist</h3>
+<ul>
+<li><strong>Title:</strong> Include your exact target keyword within the first 60 characters</li>
+<li><strong>Description:</strong> Write a minimum 300-word description with natural keyword usage</li>
+<li><strong>Tags:</strong> Use 5–10 tags, starting with your exact keyword</li>
+<li><strong>Chapters:</strong> Add chapter markers — they appear in Google search snippets</li>
+<li><strong>Subtitles:</strong> Upload a custom subtitle file (auto-captions have 80% accuracy; custom is 99%)</li>
+<li><strong>Thumbnail:</strong> Use faces with exaggerated expressions — they consistently outperform text-only thumbnails</li>
+</ul>
+<h2>YouTube Monetization in 2026</h2>
+<p>YouTube Premium has crossed <strong>100 million subscribers</strong>, meaning a growing portion of your views now come from ad-free viewers who still generate revenue through YouTube's Premium revenue sharing.</p>
+<p>The most effective YouTube monetization stack in 2026 combines: AdSense revenue + channel memberships + merchandise shelf + affiliate links in descriptions + course sales via YouTube's new "Academy" feature.</p>`,
+    related:['tiktok','instagram','creators']
+  },
+
+  linkedin: {
+    tag:'💼 LinkedIn', tagClass:'tag-linkedin', category:'LinkedIn',
+    title:"LinkedIn in 2026: Why It's Now the Highest-ROI Platform for B2B Brands and Thought Leaders",
+    subtitle:"With 1.1 billion members and the highest average income of any social platform, LinkedIn has transformed from a job board into the most valuable B2B marketing channel on the internet.",
+    author:'David Chen', avatar:'DC', avatarColor:'#0A66C2',
+    date:'June 25, 2026', read:'8 min read', views:'24K views',
+    img:'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80&auto=format&fit=crop',
+    caption:'LinkedIn\'s creator economy has exploded in 2026, with over 4 million creators publishing content regularly on the platform.',
+    body:`<h2>LinkedIn's Transformation</h2>
+<p>LinkedIn in 2026 is unrecognizable from the stiff, resume-focused platform of five years ago. With <strong>1.1 billion registered members</strong> and a 12% year-over-year growth rate, it's now a thriving content ecosystem where thought leaders, brands, and professionals build real influence.</p>
+<p>More importantly, LinkedIn's audience is uniquely valuable: the platform has the highest average household income and highest concentration of decision-makers of any social media platform.</p>
+<blockquote>"LinkedIn's engagement rate for organic content is 6× higher than any other platform for B2B content. The audience isn't just larger — it's the right audience." — HubSpot B2B Marketing Report 2026</blockquote>
+<h2>What Works on LinkedIn in 2026</h2>
+<p>LinkedIn's algorithm in 2026 rewards a specific type of content: personal, opinionated, and story-driven posts that spark genuine discussion.</p>
+<h3>Content Types Ranked by Engagement</h3>
+<ul>
+<li><strong>#1 Personal story posts</strong> — "Here's what I learned from my biggest business failure" (avg. 15.2% engagement rate)</li>
+<li><strong>#2 Contrarian takes</strong> — Thoughtful disagreement with conventional wisdom</li>
+<li><strong>#3 Behind-the-scenes content</strong> — Building in public, sharing your process</li>
+<li><strong>#4 Data-driven insights</strong> — Original research or surprising statistics</li>
+<li><strong>#5 Carousels / Document posts</strong> — Visual slide-format posts</li>
+</ul>
+<div class="highlight-box">
+<strong>LinkedIn's Golden Formula:</strong><br><br>
+Hook (1 line) → Story (3–5 lines) → Lesson (2–3 lines) → Call to action (1 line)<br><br>
+Total: 8–12 lines. No walls of text. Strategic line breaks after every 1–2 sentences.
+</div>
+<h2>LinkedIn Creator Mode: Is It Worth It?</h2>
+<p>LinkedIn's Creator Mode gives you access to a "Follow" button instead of "Connect", newsletter features, and priority distribution to non-connections. For anyone building an audience, it's essential — turn it on immediately.</p>`,
+    related:['creators','marketing','ai']
+  },
+
+  creators: {
+    tag:'⭐ Creator Economy', tagClass:'tag-creator', category:'Creators',
+    title:"The Creator Economy in 2026: Nano-Influencers Win, Burnout Is Real, and Micro-Dramas Are the Next $7.8B Format",
+    subtitle:"The creator economy has matured into a $500 billion industry — but success looks completely different than it did even two years ago.",
+    author:'Aisha Thompson', avatar:'AT', avatarColor:'#6C47FF',
+    date:'June 24, 2026', read:'10 min read', views:'41K views',
+    img:'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&auto=format&fit=crop',
+    caption:'Full-time content creators now make up one of the fastest-growing career categories in the world, with an estimated 50 million people identifying as creators.',
+    body:`<h2>The Creator Economy by the Numbers</h2>
+<p>The creator economy is now a <strong>$500 billion industry</strong>, with an estimated 50 million people worldwide identifying as content creators. But the landscape has shifted dramatically: the mega-influencer era is over, and the age of authentic, niche creators has arrived.</p>
+<p>A Sprout Social study of 2,000 campaigns found that <strong>nano-influencers</strong> (creators with 1,000–10,000 followers) convert at 4× the rate of celebrity or mega-influencer promotions. Authenticity has become the scarcest commodity on social media.</p>
+<blockquote>"The audience isn't stupid. They know when someone genuinely loves a product versus when they're reading a script. That's why your neighbor with 3,000 followers can sell out a local restaurant, and a celebrity with 10 million can't move products." — Creator Marketing Expert, 2026</blockquote>
+<h2>Micro-Dramas: The $7.8 Billion Opportunity</h2>
+<p>If you haven't heard of micro-dramas yet, pay attention: Deloitte predicts this new content format will generate <strong>$7.8 billion in revenue in 2026</strong>.</p>
+<p>Micro-dramas are serialized short-form story content — typically 1–5 minutes per episode — that follow a narrative arc across multiple videos. Think soap opera meets TikTok. Platforms like TikTok and YouTube Shorts have seen explosive growth in this format, particularly in China where micro-drama apps have already become multi-billion dollar businesses.</p>
+<div class="highlight-box">
+<strong>How to Launch Your Own Micro-Drama Series</strong><br><br>
+1. Choose a relatable premise (small business journey, relationship story, cooking challenge)<br>
+2. End every episode on a cliffhanger or question<br>
+3. Post consistently — same time, 3–5 episodes per week<br>
+4. Create a series hashtag that viewers can follow<br>
+5. Monetize through brand integrations woven into the storyline
+</div>
+<h2>Creator Burnout: The Epidemic No One Talks About</h2>
+<p>A new Sprout Social survey reveals that <strong>60% of full-time content creators</strong> are actively reducing their posting frequency in 2026, citing burnout from algorithm anxiety and the relentless pressure to produce content.</p>
+<p>The smartest creators are adopting "slow content" strategies — fewer posts, higher quality, deeper community engagement. Quality over quantity has finally won the argument.</p>
+<h2>How to Build a Sustainable Creator Career in 2026</h2>
+<ul>
+<li><strong>Diversify your income</strong> — don't rely solely on brand deals. Build courses, newsletters, memberships, and products.</li>
+<li><strong>Own your audience</strong> — grow an email list. Algorithms change; your email list doesn't.</li>
+<li><strong>Batch create</strong> — dedicate 1–2 days per week to content creation instead of daily scrambling</li>
+<li><strong>Build in public</strong> — share your journey, not just your highlights</li>
+<li><strong>Set boundaries</strong> — scheduled "off" days from content creation are not optional</li>
+</ul>`,
+    related:['tiktok','marketing','commerce']
+  },
+
+  ai: {
+    tag:'🤖 AI Tools', tagClass:'tag-ai', category:'AI Tools',
+    title:"The 12 Best AI Social Media Tools in 2026 — Tested, Ranked, and Brutally Honest",
+    subtitle:"We spent 60 days testing every major AI content tool so you don't have to. Here's what actually saves time, what's overhyped, and the one tool that's genuinely changed our workflow.",
+    author:'Chen Liu', avatar:'CL', avatarColor:'#0D47A1',
+    date:'June 23, 2026', read:'11 min read', views:'52K views',
+    img:'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&q=80&auto=format&fit=crop',
+    caption:'AI tools are now handling up to 40% of brand social content creation — but the best results still require human creativity and judgment at the helm.',
+    body:`<h2>The AI Content Reality Check</h2>
+<p>75% of workers now use generative AI, according to an AIPRM survey. For social media specifically, AI tools have moved from "interesting experiment" to "core workflow" for most marketing teams in 2026.</p>
+<p>But here's the tension: Hootsuite's 2026 Social Trends report found that <strong>nearly 30% of consumers say they're less likely to choose a brand that uses AI-generated ads</strong>. AI is essential for efficiency, but the output needs a human voice and touch.</p>
+<blockquote>"The brands winning in 2026 use AI for research, optimization, and scale — but never let AI replace the human story at the center of their content." — Hootsuite 2026 Social Trends</blockquote>
+<h2>Top AI Tools Ranked</h2>
+<h3>🥇 #1 — Claude (Anthropic) — Best for Long-Form Content Strategy</h3>
+<p>Exceptional for developing content pillars, writing long-form articles, creating content calendars, and strategic planning. The depth of reasoning outperforms other models for complex marketing tasks. Best for: content strategy, blog posts, newsletter drafts, campaign briefs.</p>
+<h3>🥈 #2 — Midjourney v7 — Best for Visual Content</h3>
+<p>Image quality is now indistinguishable from professional photography for social media purposes. Creates platform-specific dimensions natively. Best for: social media graphics, ad creative, thumbnail art.</p>
+<h3>🥉 #3 — Sora (OpenAI) — Best for Video Generation</h3>
+<p>Text-to-video has crossed a quality threshold that makes it genuinely usable for social content. Shorts, Reels backgrounds, and ad creative can now be generated from a text prompt in minutes.</p>
+<div class="highlight-box">
+<strong>The AI Workflow That Works</strong><br><br>
+1. Use AI to research trending topics and competitor analysis<br>
+2. Use AI to generate 10 content ideas → humans select the best 3<br>
+3. Humans write the core content with personality and voice<br>
+4. Use AI to generate image/video assets<br>
+5. Use AI to adapt content for each platform's format<br>
+6. Humans review, add brand voice, and publish
+</div>
+<h2>What AI Cannot Replace</h2>
+<p>Despite the hype, there are critical elements of social media success that AI cannot authentically provide:</p>
+<ul>
+<li><strong>Genuine personal stories and experiences</strong> — your audience follows YOU</li>
+<li><strong>Real-time cultural awareness</strong> — reacting to trends as they happen</li>
+<li><strong>Community relationship building</strong> — responding to comments with care</li>
+<li><strong>Brand intuition</strong> — knowing what feels "off" for your brand</li>
+<li><strong>Creative risk-taking</strong> — AI optimizes for average, humans create outliers</li>
+</ul>`,
+    related:['marketing','creators','tiktok']
+  },
+
+  marketing: {
+    tag:'📊 Marketing', tagClass:'tag-marketing', category:'Marketing',
+    title:"Social Media Marketing in 2026: The Complete Strategy Guide for Brands That Want to Actually Grow",
+    subtitle:"Virality is dead. Community is everything. Here's the data-backed playbook for building social media presence that drives real business results in 2026.",
+    author:'Marcus Patel', avatar:'MP', avatarColor:'#880E4F',
+    date:'June 22, 2026', read:'14 min read', views:'44K views',
+    img:'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&auto=format&fit=crop',
+    caption:'Social media marketing budgets are growing 18% year-over-year as platforms deliver measurable ROI across the full customer journey.',
+    body:`<h2>The End of Chasing Virality</h2>
+<p>Hootsuite's 2026 Social Trends report makes it explicit: follower count and traditional engagement rate metrics are no longer reliable indicators of impact. The brands winning in 2026 have stopped chasing viral moments and started building intentional communities.</p>
+<p>Why? Because a viral post gives you a spike. A community gives you a business. The metrics that matter in 2026 are saves, shares, direct messages, link clicks, and conversion rates — not likes.</p>
+<blockquote>"The goal is not to go viral. The goal is to become the most trusted source in your niche. Those are very different strategies." — Sprout Social 2026 Marketing Report</blockquote>
+<h2>Platform ROI Rankings for 2026</h2>
+<p>Based on aggregated data from HubSpot, Hootsuite, and Sprout Social's annual reports, here's where brands are seeing the best return on investment:</p>
+<div class="highlight-box">
+<strong>B2C Brands:</strong> TikTok (#1) → Instagram (#2) → YouTube (#3) → Pinterest (#4) → Facebook (#5)<br><br>
+<strong>B2B Brands:</strong> LinkedIn (#1) → YouTube (#2) → X/Twitter (#3) → Instagram (#4) → TikTok (#5)
+</div>
+<h2>The Social SEO Revolution</h2>
+<p>Social media search is now outpacing traditional SEO for younger generations. Sprout's Q2 2025 Pulse Survey revealed that nearly <strong>one in three consumers skip Google entirely</strong>, instead starting their search journey on TikTok, Instagram, or YouTube.</p>
+<h3>Social SEO Checklist for Every Platform</h3>
+<ul>
+<li><strong>TikTok:</strong> Keywords in captions (first line), on-screen text, hashtags (3–5 specific ones), spoken audio</li>
+<li><strong>Instagram:</strong> Keywords in bio, captions, alt text, location tags, hashtags (5–7)</li>
+<li><strong>YouTube:</strong> Keywords in title, description (300+ words), tags, chapter titles, custom subtitles</li>
+<li><strong>LinkedIn:</strong> Keywords in headline, about section, post text, article titles</li>
+</ul>
+<h2>The Content Calendar Framework</h2>
+<p>Stop posting randomly. The brands with consistent growth in 2026 follow a structured content mix:</p>
+<ul>
+<li><strong>40% Educational content</strong> — How-tos, tips, insights that solve real problems</li>
+<li><strong>30% Entertainment content</strong> — Relatable, funny, or emotionally resonant posts</li>
+<li><strong>20% Community content</strong> — UGC, Q&As, polls, behind-the-scenes</li>
+<li><strong>10% Promotional content</strong> — Product features, offers, announcements</li>
+</ul>
+<h2>Measuring What Matters</h2>
+<p>Vanity metrics (likes, follower count) are out. These are the metrics that correlate with actual business outcomes:</p>
+<ul>
+<li>Save rate and share rate (content quality signals)</li>
+<li>Click-through rate to website (traffic generation)</li>
+<li>DM volume (relationship and purchase intent signals)</li>
+<li>Social commerce conversion rate (direct revenue)</li>
+<li>Share of voice vs competitors (brand awareness)</li>
+</ul>`,
+    related:['ai','commerce','creators']
+  },
+
+  commerce: {
+    tag:'🛒 Social Commerce', tagClass:'tag-news', category:'Social Commerce',
+    title:"Social Commerce Hits $1.2 Trillion in 2026: TikTok Shop vs Instagram Checkout vs Pinterest — Who Wins?",
+    subtitle:"In-app shopping is no longer a nice-to-have. We analyzed conversion rates, fees, and audience data across all three major social shopping platforms to show you where your budget should go.",
+    author:'Chen Liu', avatar:'CL', avatarColor:'#1B5E20',
+    date:'June 21, 2026', read:'8 min read', views:'48K views',
+    img:'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&q=80&auto=format&fit=crop',
+    caption:'Social commerce is now a $1.2 trillion industry globally, with in-app purchases becoming the default shopping behavior for users under 30.',
+    body:`<h2>The Social Commerce Explosion</h2>
+<p>Social commerce — shopping that happens directly within social media apps — has crossed <strong>$1.2 trillion in global value</strong> in 2026. For context, that's larger than the entire e-commerce market was in 2018.</p>
+<p>For anyone selling products, ignoring social commerce in 2026 is like ignoring e-commerce in 2010. The train has left the station, and it's moving fast.</p>
+<blockquote>"In-app shopping is now part of life. In 2026, it's going to be even more seamless and personalized while merging community, entertainment, and convenience." — Adobe 2026 Social Trends Report</blockquote>
+<h2>Platform-by-Platform Breakdown</h2>
+<h3>🎵 TikTok Shop — Best for Impulse Purchases</h3>
+<p>TikTok Shop crossed $100 billion GMV in 2025 and is on track to double that in 2026. Its power lies in the seamless integration between content and commerce — viewers can purchase a product without ever leaving the video they're watching.</p>
+<p><strong>Best for:</strong> Consumer products under $100, fashion, beauty, food, gadgets<br>
+<strong>Average conversion rate:</strong> 3.4% (significantly higher than traditional e-commerce's 2.1%)<br>
+<strong>Platform fee:</strong> 2–8% commission on sales</p>
+<h3>📸 Instagram Checkout — Best for Premium Brands</h3>
+<p>Instagram Checkout caters to a more affluent, aspirational audience. Average order values are 40% higher than TikTok Shop, but conversion rates are lower. Best suited for premium fashion, beauty, home décor, and lifestyle brands.</p>
+<p><strong>Best for:</strong> Premium products $50–$500, fashion, beauty, home<br>
+<strong>Average conversion rate:</strong> 1.8%<br>
+<strong>Platform fee:</strong> 5% per transaction</p>
+<h3>📌 Pinterest Shopping — Best for Planned Purchases</h3>
+<p>Pinterest users are in a planning mindset — they're not impulse buying, they're researching future purchases. This makes Pinterest uniquely valuable for home improvement, wedding, and interior design categories.</p>
+<p><strong>Best for:</strong> Home, wedding, fashion, food — high-consideration purchases<br>
+<strong>Average conversion rate:</strong> 2.3% (but with highest average order value at $180)<br>
+<strong>Platform fee:</strong> Free product listings + paid ads</p>
+<div class="highlight-box">
+<strong>Our Recommendation:</strong><br><br>
+Start with TikTok Shop for volume and discovery. Add Instagram Checkout for premium positioning. Use Pinterest for SEO-rich product listings that rank on Google. Run all three together for a complete social commerce strategy.
+</div>
+<h2>Getting Started with Social Commerce</h2>
+<ol>
+<li>Connect your product catalog to each platform's commerce manager</li>
+<li>Tag products in every relevant post and Reel</li>
+<li>Partner with nano-influencers for authentic product demonstrations</li>
+<li>Use live shopping streams — conversion rates are 5× higher than static posts</li>
+<li>Enable reviews and ratings on your social shop pages</li>
+</ol>`,
+    related:['tiktok','instagram','marketing']
+  }
+};
+
+function showHome(){
+  document.getElementById('page-home').classList.add('active');
+  document.getElementById('page-article').classList.remove('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function showArticle(key){
+  var a = articles[key];
+  if(!a) return;
+  document.getElementById('page-home').classList.remove('active');
+  document.getElementById('page-article').classList.add('active');
+
+  // fill content
+  var tag = document.getElementById('article-tag');
+  tag.textContent = a.tag;
+  tag.className = 'article-tag card-tag ' + a.tagClass;
+  document.getElementById('article-title').textContent = a.title;
+  document.getElementById('article-subtitle').textContent = a.subtitle;
+  document.getElementById('article-category').textContent = a.category;
+  document.getElementById('article-breadcrumb-title').textContent = a.title.substring(0,50)+'…';
+  var av = document.getElementById('article-avatar');
+  av.textContent = a.avatar;
+  av.style.background = a.avatarColor;
+  document.getElementById('article-author').textContent = a.author;
+  document.getElementById('article-meta').textContent = a.date + ' · ' + a.read + ' · ' + a.views;
+  var img = document.getElementById('article-img');
+  img.src = a.img; img.alt = a.title;
+  document.getElementById('article-caption').textContent = a.caption;
+  document.getElementById('article-body').innerHTML = a.body;
+
+  // related
+  var imgs = {
+    main:'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=400&q=80&auto=format&fit=crop',
+    tiktok:'https://images.unsplash.com/photo-1616469829581-73993eb86b02?w=400&q=80&auto=format&fit=crop',
+    instagram:'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&q=80&auto=format&fit=crop',
+    youtube:'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&q=80&auto=format&fit=crop',
+    linkedin:'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80&auto=format&fit=crop',
+    creators:'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80&auto=format&fit=crop',
+    ai:'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&q=80&auto=format&fit=crop',
+    marketing:'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80&auto=format&fit=crop',
+    commerce:'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80&auto=format&fit=crop'
+  };
+  var relHTML = '';
+  (a.related||[]).forEach(function(rk){
+    var r = articles[rk];
+    if(!r) return;
+    relHTML += '<article class="article-card" onclick="showArticle(\''+rk+'\')">';
+    relHTML += '<img class="article-card-img" src="'+imgs[rk]+'" alt="'+r.category+'" loading="lazy">';
+    relHTML += '<div class="article-card-body">';
+    relHTML += '<span class="card-tag '+r.tagClass+'">'+r.category+'</span>';
+    relHTML += '<h3 class="article-card-title">'+r.title+'</h3>';
+    relHTML += '<div class="article-meta"><span>'+r.read+'</span><span class="sep">·</span><span>'+r.views+'</span></div>';
+    relHTML += '</div></article>';
+  });
+  document.getElementById('related-articles').innerHTML = relHTML;
+
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function vote(el){
+  var opts = el.parentElement.querySelectorAll('.poll-option');
+  opts.forEach(function(o){ o.style.pointerEvents='none'; });
+  el.querySelector('.poll-bar').style.background='#FFD6D6';
+  el.style.border='1.5px solid var(--accent)';
+}
+
+function subscribe(){
+  var inp = document.querySelector('#nl-email') || document.querySelector('.newsletter-input');
+  if(inp && inp.value && inp.value.includes('@')){
+    inp.value=''; inp.placeholder='✓ Subscribed!';
+    var btn = inp.nextElementSibling;
+    if(btn){ btn.textContent='Done! ✓'; btn.style.background='#00B894'; }
+  }
+}
+
+function postComment(btn){
+  btn.textContent='Comment posted! ✓';
+  btn.style.background='#00B894';
+  setTimeout(function(){ btn.textContent='Post Comment →'; btn.style.background=''; },3000);
+}
+
+document.querySelectorAll('.page-btn').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.page-btn').forEach(function(x){ x.classList.remove('active'); });
+    if(!this.classList.contains('pn')) this.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
